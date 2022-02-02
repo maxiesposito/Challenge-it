@@ -142,8 +142,8 @@ namespace CodingChallenge.Data.Classes
                 // FOOTER
                 sb.Append("TOTAL:<br/>");
                 //sb.Append(numeroCuadrados + numeroCirculos + numeroTriangulos + " " + (idioma == Castellano ? "formas" : "shapes") + " ");
-                sb.Append(numeroCuadrados + numeroCirculos + numeroTriangulos +numeroTrapecio + numeroRectangulo + " " + traduccionFormas(idioma) + " ");
-                sb.Append(traduccionPerimetro(idioma) + (perimetroCuadrados + perimetroTriangulos + perimetroCirculos + perimetroTrapecio + perimetroRectangulo).ToString("#.##") + " ");
+                sb.Append(numeroCuadrados + numeroCirculos + numeroTriangulos +numeroTrapecio + numeroRectangulo + " " + Classes.idioma.traduccionFormas(idioma) + " ");
+                sb.Append(Classes.idioma.traduccionPerimetro(idioma) + (perimetroCuadrados + perimetroTriangulos + perimetroCirculos + perimetroTrapecio + perimetroRectangulo).ToString("#.##") + " ");
                 sb.Append("Area " + (areaCuadrados + areaCirculos + areaTriangulos +areaTrapecio + areaRectangulo).ToString("#.##"));
             }
 
